@@ -1,0 +1,131 @@
+<section class="modulex-yogunluk-saatleri{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-yogunluk-saatleri-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* yogunluk-saatleri — module ailesinde grafik yok; hafta-zaman-cizelgesi hafta numaralı pist + metin panelidir, ders-programi-tablo gün × saat tablosu. Bu modül saatlik doluluğu sütun grafiğiyle gösterir (yükseklik = yüzde, ton kademesi, «şu an» etiketi, otomatik en sakin/en yoğun saat özeti); body/durum-paneli serilerinin durum kartlarından da farklı. */
+  .modulex-yogunluk-saatleri { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-yogunluk-saatleri *, .modulex-yogunluk-saatleri *::before, .modulex-yogunluk-saatleri *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-yogunluk-saatleri :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-yogunluk-saatleri :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-yogunluk-saatleri :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-yogunluk-saatleri :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-yogunluk-saatleri img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-yogunluk-saatleri) img { height: auto; }
+  .modulex-yogunluk-saatleri [hidden] { display: none !important; }
+  .modulex-yogunluk-saatleri :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-yogunluk-saatleri :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-yogunluk-saatleri-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-yogunluk-saatleri-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-yogunluk-saatleri--bassiz .modulex-yogunluk-saatleri-bas { display: none; }
+  .modulex-yogunluk-saatleri-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-yogunluk-saatleri-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-yogunluk-saatleri-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-yogunluk-saatleri-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-yogunluk-saatleri-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-yogunluk-saatleri-dugme:hover { transform: translateY(-2px); }
+  .modulex-yogunluk-saatleri-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-yogunluk-saatleri-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-yogunluk-saatleri-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-yogunluk-saatleri-giris { display: grid; gap: 14px; max-width: 700px; margin-block-end: clamp(26px, 4vw, 40px); }
+  .modulex-yogunluk-saatleri-pano { display: grid; gap: 22px; min-width: 0; padding: clamp(18px, 3vw, 34px); border-radius: calc(--yuvarlak-- * 1.2); background: --bg--; box-shadow: 0 24px 60px -48px color-mix(in srgb, --text-- 70%, transparent); }
+  .modulex-yogunluk-saatleri-gunler { display: flex; gap: 6px; min-width: 0; overflow-x: auto; padding-block-end: 4px; scrollbar-width: none; }
+  .modulex-yogunluk-saatleri-gunler::-webkit-scrollbar { display: none; }
+  .modulex-yogunluk-saatleri:not(.modulex-yogunluk-saatleri--js) .modulex-yogunluk-saatleri-gunler { display: none; }
+  .modulex-yogunluk-saatleri-gsek { flex: none; min-height: 44px; padding: 8px 16px; border: 1.5px solid --cizgi--; border-radius: 12px; background: transparent; color: --text--; font: inherit; font-weight: 700; transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
+  .modulex-yogunluk-saatleri-gsek:hover { border-color: --accent--; }
+  .modulex-yogunluk-saatleri-gsek[aria-selected="true"] { border-color: --text--; background-color: --text--; color: --bg--; }
+  .modulex-yogunluk-saatleri-paneller { display: grid; gap: 30px; min-width: 0; }
+  .modulex-yogunluk-saatleri-gun { display: grid; gap: 16px; min-width: 0; }
+  .modulex-yogunluk-saatleri--js .modulex-yogunluk-saatleri-gbas { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .modulex-yogunluk-saatleri-gbas { font-size: 1.05rem; font-weight: 750; }
+  .modulex-yogunluk-saatleri-grafik { padding-block: 34px 26px; }
+  .modulex-yogunluk-saatleri-sutunlar { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); align-items: end; gap: 6px; height: 120px; border-block-end: 2px solid --text--; background: repeating-linear-gradient(to top, transparent 0 calc(25% - 1px), color-mix(in srgb, --text-- 10%, transparent) calc(25% - 1px) 25%); }
+  .modulex-yogunluk-saatleri--js .modulex-yogunluk-saatleri-sutunlar { height: 220px; }
+  .modulex-yogunluk-saatleri-sutun { position: relative; display: grid; align-items: end; height: 100%; }
+  .modulex-yogunluk-saatleri-cubuk { height: var(--fb-h); min-height: 4px; border-radius: 6px 6px 0 0; background: color-mix(in srgb, --accent-- 32%, transparent); transform-origin: 50% 100%; transition: background-color 0.3s ease; animation: modulex-yogunluk-saatleri-boy 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  .modulex-yogunluk-saatleri-sutun--orta .modulex-yogunluk-saatleri-cubuk { background: color-mix(in srgb, --accent-- 62%, transparent); }
+  .modulex-yogunluk-saatleri-sutun--cok .modulex-yogunluk-saatleri-cubuk { background: --accent--; }
+  .modulex-yogunluk-saatleri-sutun:hover .modulex-yogunluk-saatleri-cubuk { background: --accentInk--; }
+  .modulex-yogunluk-saatleri-sutun.modulex-yogunluk-saatleri--simdi .modulex-yogunluk-saatleri-cubuk { background: repeating-linear-gradient(135deg, --text-- 0 4px, color-mix(in srgb, --text-- 70%, transparent) 4px 8px); }
+  .modulex-yogunluk-saatleri-saat { position: absolute; inset-block-start: calc(100% + 6px); inset-inline: 0; color: --muted--; font-size: 0.72rem; font-weight: 650; text-align: center; font-variant-numeric: tabular-nums; }
+  .modulex-yogunluk-saatleri-simdi { position: absolute; inset-block-end: calc(var(--fb-h) + 8px); left: 50%; z-index: 1; padding: 3px 9px; border-radius: 999px; background: --text--; color: --bg--; font-size: 0.72rem; font-weight: 800; white-space: nowrap; translate: -50% 0; animation: modulex-yogunluk-saatleri-zipla 2s ease-in-out infinite; }
+  .modulex-yogunluk-saatleri-gizli { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .modulex-yogunluk-saatleri-alt { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; }
+  .modulex-yogunluk-saatleri-oz { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: --kartBg--; font-size: 0.9rem; font-weight: 700; }
+  .modulex-yogunluk-saatleri-ozik { color: --accentInk--; font-size: 20px; }
+  .modulex-yogunluk-saatleri-gnot { color: --muted--; font-size: 0.9rem; }
+  .modulex-yogunluk-saatleri-pano + .modulex-yogunluk-saatleri-cta { margin-block-start: 28px; }
+  @keyframes modulex-yogunluk-saatleri-boy { from { transform: scaleY(0); } to { transform: none; } }
+  @keyframes modulex-yogunluk-saatleri-zipla { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+  @media (max-width: 768px) {
+    .modulex-yogunluk-saatleri-sutunlar { gap: 3px; }
+    .modulex-yogunluk-saatleri--js .modulex-yogunluk-saatleri-sutunlar { height: 170px; }
+    .modulex-yogunluk-saatleri-sutun:nth-child(even) .modulex-yogunluk-saatleri-saat { visibility: hidden; }
+    .modulex-yogunluk-saatleri-cubuk { border-radius: 4px 4px 0 0; }
+  }
+  .modulex-yogunluk-saatleri-bag { color: inherit; text-decoration: none; }
+  .modulex-yogunluk-saatleri-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-yogunluk-saatleri-mbaslik { font-size: 1.05rem; font-weight: 700; }
+  .modulex-yogunluk-saatleri-mmetin { color: --muted--; font-size: 0.95rem; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yogunluk-saatleri :is(.modulex-yogunluk-saatleri-baslik, .modulex-yogunluk-saatleri-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-yogunluk-saatleri-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-yogunluk-saatleri { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-yogunluk-saatleri *, .modulex-yogunluk-saatleri *::before, .modulex-yogunluk-saatleri *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-yogunluk-saatleri";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const yogunlukGun = (s, P) => {
+        const t = [...s.querySelectorAll("[data-ygun]")];
+        if (!t.length) return;
+        s.classList.add(P + "--js");
+        const p = t.map((b) => document.getElementById(b.getAttribute("aria-controls")));
+        const bugun = String(((new Date().getDay() + 6) % 7) + 1);
+        const saat = String(new Date().getHours());
+        const sec = (i, odak) => {
+          t.forEach((b, j) => { b.setAttribute("aria-selected", String(j === i)); b.tabIndex = j === i ? 0 : -1; if (j === i && odak) b.focus(); });
+          p.forEach((x, j) => { if (x) x.hidden = j !== i; });
+        };
+        t.forEach((b, i) => {
+          b.addEventListener("click", () => sec(i));
+          b.addEventListener("keydown", (e) => {
+            const rtl = getComputedStyle(s).direction === "rtl";
+            let n = null;
+            if (e.key === (rtl ? "ArrowLeft" : "ArrowRight")) n = i + 1;
+            else if (e.key === (rtl ? "ArrowRight" : "ArrowLeft")) n = i - 1;
+            else if (e.key === "Home") n = 0;
+            else if (e.key === "End") n = t.length - 1;
+            if (n === null) return;
+            e.preventDefault();
+            sec((n + t.length) % t.length, true);
+          });
+        });
+        const ilk = t.findIndex((b) => b.dataset.iso === bugun);
+        if (ilk >= 0 && p[ilk]) {
+          const c = [...p[ilk].querySelectorAll("[data-saat]")].find((x) => x.dataset.saat === saat);
+          const et = p[ilk].querySelector("[data-simdi]");
+          if (c) { c.classList.add(P + "--simdi"); if (et) { c.append(et); et.hidden = false; } }
+        }
+        sec(Math.max(0, ilk));
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      yogunlukGun(s, P, az);
+    });
+  })();
+</script>

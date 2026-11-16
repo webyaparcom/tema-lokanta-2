@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "id": "dhvs0y91k4",
+      "name": {
+        "tr": "Abonman",
+        "en": "Meal cards",
+        "ar": "بطاقات الوجبات"
+      },
+      "description": {
+        "tr": "Haftalık ve aylık öğle kartları (örnek fiyat).",
+        "en": "Weekly and monthly lunch cards (example prices).",
+        "ar": "بطاقات غداء أسبوعية وشهرية (أسعار نموذجية)."
+      },
+      "path": "hizmetler",
+      "icon": "card_membership",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "2n315x",
+          "yvckn8"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Saatler",
+        "en": "Hours",
+        "ar": "الساعات"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "schedule",
+      "desing": {
+        "header": [],
+        "body": [
+          "c48u6p",
+          "tl94zf"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Saatlik yoğunluk ve müdavim notları.",
+        "en": "Hourly occupancy and regulars' notes.",
+        "ar": "الازدحام بالساعة وملاحظات الزبائن الدائمين."
+      }
+    },
+    {
+      "id": "mjltd14e24",
+      "name": {
+        "tr": "Sorular",
+        "en": "FAQ",
+        "ar": "الأسئلة"
+      },
+      "description": {
+        "tr": "Merak edilenler ve kısa yanıtlar.",
+        "en": "Common questions and short answers.",
+        "ar": "أسئلة متكررة وإجابات موجزة."
+      },
+      "path": "sorular",
+      "icon": "help",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "s671bc",
+          "yvckn8"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "wo9fuh",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Geri arama, adres ve harita.",
+        "en": "Call back, address and map.",
+        "ar": "معاودة الاتصال والعنوان والخريطة."
+      }
+    }
+  ],
+  "desc": []
+}

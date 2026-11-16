@@ -1,0 +1,61 @@
+{
+  "name": "Yoğunluk Saatleri — gün sekmeli saatlik doluluk sütunları, «şu an» işareti",
+  "description": "Gün sekmeleri (açılışta bugün) ve seçili günün saatlik yoğunluk sütun grafiği: sütun yüksekliği doluluk yüzdesi, üç ton (sakin · orta · yoğun), bugünse geçerli saatin sütununda «şu an» etiketi; altında en sakin / en yoğun saat özeti ve gün notu. Kayıt alanları: `gun` (1–7 ISO) · `saatler` (açılış saatinden başlayan 0–100 dizisi). JS yokken tüm günlerin küçük grafikleri başlıklı olarak alt alta. module ailesinde grafik yok; hafta-zaman-cizelgesi hafta numaralı pist + metin panelidir, ders-programi-tablo gün × saat tablosu. Bu modül saatlik doluluğu sütun grafiğiyle gösterir (yükseklik = yüzde, ton kademesi, «şu an» etiketi, otomatik en sakin/en yoğun saat özeti); body/durum-paneli serilerinin durum kartlarından da farklı. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık ve metin yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "bar_chart",
+  "category": "module",
+  "subCategory": "popular-times",
+  "tags": [
+    "module",
+    "chart",
+    "busy-hours",
+    "tabs",
+    "today",
+    "interactive",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1100px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "img": "",
+    "img2": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "cta2_ad": "",
+    "cta2_url": "",
+    "bg": "var(--mx-site-surface, #f6f7f9)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+    "kartBg": "var(--mx-site-bg, #ffffff)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "acilis": 8,
+    "gunAd": "",
+    "simdiAd": "",
+    "sakinAd": "",
+    "yogunAd": "",
+    "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data",
+    "alanlar": {
+      "ikon": "madde ikonu (Material Symbols)",
+      "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+      "metin": "madde metni (dil sözlüğü)",
+      "url": "madde bağlantısı"
+    }
+  }
+}

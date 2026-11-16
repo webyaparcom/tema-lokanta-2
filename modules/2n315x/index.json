@@ -1,0 +1,53 @@
+{
+  "name": "Fiyat Öne Çıkan Panel — büyük vurgulu paket ve yan liste",
+  "description": "Öne çıkan paket (featured; yoksa ortadaki) geniş vurgu panelinde: rozet, ad, dev fiyat, not, iki sütun özellik, dolu düğme. Diğer paketler yanında sıkı kartlar: ad, fiyat, ilk üç özellik, düğme. Paketler eşit ağırlıkta değil: biri sahnenin yarısını alır, diğerleri ikincil seçenek gibi yan sütunda sıralanır. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "workspace_premium",
+  "category": "pricing",
+  "subCategory": "featured-panel",
+  "tags": [
+    "pricing",
+    "featured",
+    "asymmetric",
+    "panel",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-surface, #f6f7f9)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+    "kartBg": "var(--mx-site-bg, #ffffff)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "data",
+    "alanlar": {
+      "ad": "paket adı (dil sözlüğü; pricing-1 `plan`)",
+      "fiyat": "fiyat metni (₺4.900 · «Teklif» …)",
+      "donem": "dönem («/ ay», «/ proje»)",
+      "not": "kısa açıklama (pricing-1 `note`)",
+      "ozellikler": "maddeler: dizi, sözlük ya da «a|b|c»",
+      "cta": "düğme yazısı (pricing-1 `ctaText`)",
+      "url": "düğme bağlantısı (pricing-1 `ctaUrl`)",
+      "vurgu": "öne çıkan paket (pricing-1 `featured`)",
+      "rozet": "öne çıkan paketin rozeti (pricing-1 `flag`)"
+    }
+  }
+}

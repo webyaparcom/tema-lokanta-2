@@ -1,0 +1,63 @@
+{
+  "name": "Açılış Menü Tahtası — kara tahta fiyat listesi, buharı tüten yuvarlak tabak",
+  "description": "Koyu zeminde bir yanda üst etiket, h1, metin ve düğmeler; diğer yanda çift çerçeveli kara tahta: başlık (tahta_baslik) + damga rozeti, altında maddeler noktalı kılavuz çizgisiyle fiyata bağlanan menü satırları (ikon · ad · ······ · fiyat). Tahtanın köşesine yuvarlak tabak görseli biner, üstünde buhar çizgileri yükselir; üzerine gelince tabak döner. acilis-ozellik-listesi ve acilis-sayi-sutunu maddeleri ikon/sayı listesi olarak dizer; bu modül maddeleri esnaf menü tahtası gibi ad ↔ fiyat noktalı kılavuz satırlarına çevirir (deger = fiyat), görseli yuvarlak tabak olarak tahtanın köşesine bindirir. Fiyat listesi açılışın kendisidir. Başlık h1, ilk görsel eager. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "restaurant_menu",
+  "category": "hero",
+  "subCategory": "menu-board",
+  "tags": [
+    "hero",
+    "menu",
+    "price-list",
+    "board",
+    "food",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "img": "",
+    "img2": "",
+    "video": "",
+    "poster": "",
+    "alt": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "cta2_ad": "",
+    "cta2_url": "",
+    "rozet_ikon": "",
+    "rozet_deger": "",
+    "rozet_metin": "",
+    "bg": "var(--mx-site-text, #111318)",
+    "text": "var(--mx-site-bg, #ffffff)",
+    "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+    "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+    "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+    "accentText": "var(--mx-site-text, #111318)",
+    "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "vurguText": "var(--mx-site-text, #111318)",
+    "tahta_baslik": "",
+    "bgcolor": "var(--mx-site-text, #111318)",
+    "color": "var(--mx-site-bg, #ffffff)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data",
+    "alanlar": {
+      "ikon": "madde ikonu (Material Symbols)",
+      "deger": "sayı/değer (ör. 1.200+, dil sözlüğü olabilir)",
+      "metin": "madde metni (dil sözlüğü)",
+      "img": "madde görseli (mozaik yerleşimlerde)",
+      "url": "madde bağlantısı"
+    }
+  }
+}

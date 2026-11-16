@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Saatler",
+    "en": "Hours",
+    "ar": "الساعات"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 1,
+  "icon": "schedule",
+  "desing": {
+    "header": [],
+    "body": [
+      "c48u6p",
+      "tl94zf"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Saatlik yoğunluk ve müdavim notları.",
+    "en": "Hourly occupancy and regulars' notes.",
+    "ar": "الازدحام بالساعة وملاحظات الزبائن الدائمين."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Saatler",
+    "en": "Hours",
+    "ar": "الساعات"
+  },
+  "keyword": {
+    "tr": "yoğunluk, saat",
+    "en": "busy hours",
+    "ar": "ساعات الازدحام"
+  },
+  "text": {},
+  "update": "2026-11-16T18:18:57.433Z",
+  "date": "2026-10-30"
+}
