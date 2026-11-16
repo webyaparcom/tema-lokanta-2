@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Kazan Lokanta: Gaziantep'te esnaf lokantası; her sabah yazılan günün tahtası, sakin saat grafiği ve aylık abonman kartı. Demo site; içerik kurgusaldır.",
+    "en": "Kazan Lokanta: a tradesmen's canteen in Gaziantep; a daily board written every morning, a quiet-hours chart and a monthly meal card. Demo site; content is fictional.",
+    "ar": "قازان لوكانتا: مطعم شعبي للحرفيين في غازي عنتاب؛ لوح يومي يُكتب كل صباح ومخطط للساعات الهادئة وبطاقة وجبات شهرية. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "esnaf lokantası, ev yemeği, günün menüsü, abonman, öğle yemeği, Gaziantep",
+    "en": "canteen, home cooking, daily menu, meal card, lunch, Gaziantep",
+    "ar": "مطعم شعبي، أكل منزلي، قائمة اليوم، بطاقة وجبات، غداء، غازي عنتاب"
+  },
+  "category": "Kurumsal",
+  "name": "Kazan Lokanta",
+  "domain": "lokanta-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "nunito-sans",
+    "heading": "dm-serif-display",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-naskh-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#9A4F86",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "11px",
+    "--mx-radius-md": "18px",
+    "--mx-radius-lg": "25px",
+    "--mx-radius-xl": "34px"
+  },
+  "icon": "icon.png"
+}

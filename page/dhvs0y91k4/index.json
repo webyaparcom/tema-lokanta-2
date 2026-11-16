@@ -1,0 +1,40 @@
+{
+  "id": "dhvs0y91k4",
+  "name": {
+    "tr": "Abonman",
+    "en": "Meal cards",
+    "ar": "بطاقات الوجبات"
+  },
+  "description": {
+    "tr": "Haftalık ve aylık öğle kartları (örnek fiyat).",
+    "en": "Weekly and monthly lunch cards (example prices).",
+    "ar": "بطاقات غداء أسبوعية وشهرية (أسعار نموذجية)."
+  },
+  "keyword": {
+    "tr": "abonman, öğle yemeği, kart",
+    "en": "meal card, lunch",
+    "ar": "بطاقة وجبات، غداء"
+  },
+  "path": "hizmetler",
+  "icon": "card_membership",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "2n315x",
+      "yvckn8"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Abonman",
+    "en": "Meal cards",
+    "ar": "بطاقات الوجبات"
+  },
+  "date": "2026-11-16T18:08:56.422Z",
+  "update": "2026-11-16T18:18:57.430Z"
+}

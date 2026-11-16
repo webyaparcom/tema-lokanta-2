@@ -1,0 +1,29 @@
+{
+  "name": "Kazan Lokanta",
+  "short_name": "Kazan Lokant",
+  "description": "Kazan Lokanta: Gaziantep'te esnaf lokantası; her sabah yazılan günün tahtası, sakin saat grafiği ve aylık abonman kartı. Demo site; içerik kurgusaldır.",
+  "start_url": "/tr/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9A4F86",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
