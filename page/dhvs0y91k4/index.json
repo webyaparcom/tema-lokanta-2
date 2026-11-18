@@ -3,17 +3,23 @@
   "name": {
     "tr": "Abonman",
     "en": "Meal cards",
-    "ar": "بطاقات الوجبات"
+    "ar": "بطاقات الوجبات",
+    "de": "Abo",
+    "ru": "Абонемент"
   },
   "description": {
     "tr": "Haftalık ve aylık öğle kartları (örnek fiyat).",
     "en": "Weekly and monthly lunch cards (example prices).",
-    "ar": "بطاقات غداء أسبوعية وشهرية (أسعار نموذجية)."
+    "ar": "بطاقات غداء أسبوعية وشهرية (أسعار نموذجية).",
+    "de": "Wochen- und Monatskarten fürs Mittagessen (Beispielpreis).",
+    "ru": "Недельные и месячные обеденные карты (примерная цена)."
   },
   "keyword": {
     "tr": "abonman, öğle yemeği, kart",
     "en": "meal card, lunch",
-    "ar": "بطاقة وجبات، غداء"
+    "ar": "بطاقة وجبات، غداء",
+    "de": "Abo, Mittagessen, Karte",
+    "ru": "абонемент, обед, карта"
   },
   "path": "hizmetler",
   "icon": "card_membership",
@@ -33,7 +39,9 @@
   "title": {
     "tr": "Abonman",
     "en": "Meal cards",
-    "ar": "بطاقات الوجبات"
+    "ar": "بطاقات الوجبات",
+    "de": "Abo",
+    "ru": "Абонемент"
   },
   "date": "2026-11-16T18:08:56.422Z",
   "update": "2026-11-16T18:18:57.430Z"

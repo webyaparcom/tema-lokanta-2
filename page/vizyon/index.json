@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Esnafın «bugün ne var?» diye ilk uğradığı kapı olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be the first door traders try when they ask \"what's on today?\".</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون أول باب يطرقه التجّار حين يسألون «ماذا لدينا اليوم؟».</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون أول باب يطرقه التجّار حين يسألون «ماذا لدينا اليوم؟».</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Die erste Anlaufstelle der Händler zu sein, wenn sie fragen «Was gibt es heute?».</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Стать первой дверью, в которую заходят торговцы с вопросом «что сегодня есть?».</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T18:08:56.267Z",
   "update": "2026-11-16T18:18:57.449Z",
