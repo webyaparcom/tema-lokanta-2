@@ -4,12 +4,16 @@
   "description": {
     "tr": "Kazan Lokanta: Gaziantep'te esnaf lokantası; her sabah yazılan günün tahtası, sakin saat grafiği ve aylık abonman kartı. Demo site; içerik kurgusaldır.",
     "en": "Kazan Lokanta: a tradesmen's canteen in Gaziantep; a daily board written every morning, a quiet-hours chart and a monthly meal card. Demo site; content is fictional.",
-    "ar": "قازان لوكانتا: مطعم شعبي للحرفيين في غازي عنتاب؛ لوح يومي يُكتب كل صباح ومخطط للساعات الهادئة وبطاقة وجبات شهرية. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "قازان لوكانتا: مطعم شعبي للحرفيين في غازي عنتاب؛ لوح يومي يُكتب كل صباح ومخطط للساعات الهادئة وبطاقة وجبات شهرية. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Kazan Lokanta: eine Esnaf-Lokanta in Gaziantep; die täglich morgens geschriebene Tageskarte, ein Diagramm der ruhigen Stunden und eine monatliche Essenskarte. Demo-Seite; Inhalte sind fiktiv.",
+    "ru": "Kazan Lokanta: столовая для рабочих в Газиантепе; ежедневное меню, написанное каждое утро, график тихих часов и месячная карта питания. Демо-сайт; контент вымышленный."
   },
   "keyword": {
     "tr": "esnaf lokantası, ev yemeği, günün menüsü, abonman, öğle yemeği, Gaziantep",
     "en": "canteen, home cooking, daily menu, meal card, lunch, Gaziantep",
-    "ar": "مطعم شعبي، أكل منزلي، قائمة اليوم، بطاقة وجبات، غداء، غازي عنتاب"
+    "ar": "مطعم شعبي، أكل منزلي، قائمة اليوم، بطاقة وجبات، غداء، غازي عنتاب",
+    "de": "Handwerkerlokal, Hausmannskost, Tagesmenü, Abo, Mittagessen, Gaziantep",
+    "ru": "народная столовая, домашняя еда, меню дня, абонемент, обед, Газиантеп"
   },
   "category": "Kurumsal",
   "name": "Kazan Lokanta",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,

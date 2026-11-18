@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Her sabah yazılan menü, gün sonunda kazan temizliği, alerjen bilgisinin sorulduğunda verilmesi.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>A menu written every morning, pots cleaned at the end of the day, allergen information given on request.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>قائمة تُكتب كل صباح، وتنظيف القدور في نهاية اليوم، ومعلومات مسببات الحساسية عند الطلب.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>قائمة تُكتب كل صباح، وتنظيف القدور في نهاية اليوم، ومعلومات مسببات الحساسية عند الطلب.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Jeden Morgen geschriebenes Menü, Kesselreinigung zum Tagesende und Allergeninformation auf Nachfrage.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Меню, написанное каждое утро, чистка котла в конце дня и информация об аллергенах по запросу.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T18:08:56.267Z",
   "update": "2026-11-16T18:18:57.451Z",

@@ -2,7 +2,9 @@
   "name": {
     "tr": "Saatler",
     "en": "Hours",
-    "ar": "الساعات"
+    "ar": "الساعات",
+    "de": "Öffnungszeiten",
+    "ru": "Часы работы"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Saatlik yoğunluk ve müdavim notları.",
     "en": "Hourly occupancy and regulars' notes.",
-    "ar": "الازدحام بالساعة وملاحظات الزبائن الدائمين."
+    "ar": "الازدحام بالساعة وملاحظات الزبائن الدائمين.",
+    "de": "Stündliche Auslastung und Stammgast-Notizen.",
+    "ru": "Почасовая загруженность и заметки о постоянных гостях."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Saatler",
     "en": "Hours",
-    "ar": "الساعات"
+    "ar": "الساعات",
+    "de": "Öffnungszeiten",
+    "ru": "Часы работы"
   },
   "keyword": {
     "tr": "yoğunluk, saat",
     "en": "busy hours",
-    "ar": "ساعات الازدحام"
+    "ar": "ساعات الازدحام",
+    "de": "Auslastung, Uhrzeit",
+    "ru": "Загруженность, время"
   },
   "text": {},
   "update": "2026-11-16T18:18:57.433Z",

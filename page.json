@@ -5,12 +5,16 @@
       "name": {
         "tr": "Abonman",
         "en": "Meal cards",
-        "ar": "بطاقات الوجبات"
+        "ar": "بطاقات الوجبات",
+        "de": "Abo",
+        "ru": "Абонемент"
       },
       "description": {
         "tr": "Haftalık ve aylık öğle kartları (örnek fiyat).",
         "en": "Weekly and monthly lunch cards (example prices).",
-        "ar": "بطاقات غداء أسبوعية وشهرية (أسعار نموذجية)."
+        "ar": "بطاقات غداء أسبوعية وشهرية (أسعار نموذجية).",
+        "de": "Wochen- und Monatskarten fürs Mittagessen (Beispielpreis).",
+        "ru": "Недельные и месячные обеденные карты (примерная цена)."
       },
       "path": "hizmetler",
       "icon": "card_membership",
@@ -30,7 +34,9 @@
       "name": {
         "tr": "Saatler",
         "en": "Hours",
-        "ar": "الساعات"
+        "ar": "الساعات",
+        "de": "Öffnungszeiten",
+        "ru": "Часы работы"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -51,7 +57,9 @@
       "description": {
         "tr": "Saatlik yoğunluk ve müdavim notları.",
         "en": "Hourly occupancy and regulars' notes.",
-        "ar": "الازدحام بالساعة وملاحظات الزبائن الدائمين."
+        "ar": "الازدحام بالساعة وملاحظات الزبائن الدائمين.",
+        "de": "Stündliche Auslastung und Stammgast-Notizen.",
+        "ru": "Почасовая загруженность и заметки о постоянных гостях."
       }
     },
     {
@@ -59,12 +67,16 @@
       "name": {
         "tr": "Sorular",
         "en": "FAQ",
-        "ar": "الأسئلة"
+        "ar": "الأسئلة",
+        "de": "FAQ",
+        "ru": "FAQ"
       },
       "description": {
         "tr": "Merak edilenler ve kısa yanıtlar.",
         "en": "Common questions and short answers.",
-        "ar": "أسئلة متكررة وإجابات موجزة."
+        "ar": "أسئلة متكررة وإجابات موجزة.",
+        "de": "Was Sie wissen möchten, in kurzen Antworten.",
+        "ru": "Что интересует читателей — в коротких ответах."
       },
       "path": "sorular",
       "icon": "help",
@@ -84,7 +96,9 @@
       "name": {
         "tr": "İletişim",
         "en": "Contact",
-        "ar": "اتصل بنا"
+        "ar": "اتصل بنا",
+        "de": "Kontakt",
+        "ru": "Контакты"
       },
       "status": "play",
       "id": "iletisim",
@@ -105,7 +119,9 @@
       "description": {
         "tr": "Geri arama, adres ve harita.",
         "en": "Call back, address and map.",
-        "ar": "معاودة الاتصال والعنوان والخريطة."
+        "ar": "معاودة الاتصال والعنوان والخريطة.",
+        "de": "Rückruf, Adresse und Karte.",
+        "ru": "Обратный звонок, адрес и карта."
       }
     }
   ],
